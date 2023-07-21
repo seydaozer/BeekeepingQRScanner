@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDB623"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/beekeeping" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#333333"
+        android:padding="16dp">
+
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FDB623"
+            android:layout_marginBottom="12dp"
+            android:text="Scan now"
+            android:textColor="#333333"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_above="@id/scanButton"
+            android:text="QR Code Scanner\n    for Bee Hives"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

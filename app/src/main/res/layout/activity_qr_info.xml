@@ -1,0 +1,100 @@
+<!-- activity_qr_info.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#333333"
+    tools:context=".QRInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#3B3B3B"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/qrInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:text="Hive Information"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/hiveNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qrInfoTextView"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:text="Hive Number"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/noQueenBeeButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="No Queen Bee"
+            android:backgroundTint="#FDB623"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/queenBeeButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Queen Bee"
+            android:backgroundTint="#FDB623"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/missingQueenButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mıssıng Queen"
+            android:backgroundTint="#FDB623"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/activeDayButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Actıve Day"
+            android:backgroundTint="#FDB623"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FDB623"
+        android:text="Save"
+        android:textColor="#333333" />
+
+</RelativeLayout>
